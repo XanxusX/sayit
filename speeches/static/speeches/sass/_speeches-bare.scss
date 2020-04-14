@@ -1197,3 +1197,9 @@ form > .row {
 #id_existing_sections {
     @include unstyled-list;
 }
+
+/* Remove hyperlinks when printing */
+
+a[href]:after {
+    content:none!important;
+}
